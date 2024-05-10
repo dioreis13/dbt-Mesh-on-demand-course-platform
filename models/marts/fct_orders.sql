@@ -5,13 +5,13 @@ with orders as (
 final as (
     select 
         order_id,
-        location_id,
+        location_id,        
+        location_name,
         customer_id,
         order_total,
         tax_paid,
         ordered_at,
         customer_name,
-        location_name,
         tax_rate,
         location_opened_at,
         date_part(month, ordered_at) as ordered_month,
@@ -20,5 +20,4 @@ final as (
     from orders
 )
 
-select * 
-from final
+select * from final
