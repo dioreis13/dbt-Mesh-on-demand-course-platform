@@ -7,6 +7,8 @@ models:
     columns:
       - name: product_id
         data_type: varchar
+        constraints:
+          - type: not_null
       - name: product_name
         data_type: varchar
       - name: product_type
