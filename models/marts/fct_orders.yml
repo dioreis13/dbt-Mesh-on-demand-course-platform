@@ -1,5 +1,6 @@
 models:
   - name: fct_orders
+    latest_version: 1
     access: public
     config:
       contract:
@@ -32,8 +33,7 @@ models:
       - name: ordered_year
         data_type: number
         
-###Add versioning section defining each version and listing changes to contract
-    versions:                     
+    versions:                     ###Add versioning section defining each version and listing changes to contract
       - v: 1
           ##Matches above! Nothing more needed
         config:
